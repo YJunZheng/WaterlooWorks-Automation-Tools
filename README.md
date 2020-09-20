@@ -17,7 +17,3 @@ For receiving someone's shortlist:
 5. Select ```Options:``` and choose "At least one of these words"
 6. Search
 
-
-==========================================================
-*** Contributors
-- https://github.com/shenbenson
