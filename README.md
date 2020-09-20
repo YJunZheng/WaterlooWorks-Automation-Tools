@@ -7,3 +7,9 @@ How to use:
 2. In CMD: ```pip install bs4```
 4. Run the script
 5. Open the shortlist.txt file to view the IDs and information
+
+How to read data:
+```
+ID - Job Title
+     Location - Positions available : Number of applicants at time to save
+```
