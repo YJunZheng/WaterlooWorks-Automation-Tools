@@ -8,13 +8,28 @@ def getShortlist(content):
 	shortlist = []
 
 	for tr in soup.findAll("tr", {"class" : "isFav"}):
-		jobID = tr.findAll("td")[2].text
-		shortlist.append(jobID)
+		info = tr.findAll("td")
+		listing = ""
+
+		listing += info[2].text + " - "
+
+		listing += info[3].findAll("span")[-1].text.strip()
+
+		if info[8].text == "":
+			listing += "\n\t\t " + "Unknown" + " - "
+		else:
+			listing += "\n\t\t " + info[8].text + " - "
+
+		listing += info[6].text + " : " + info[10].text + "\n"
+
+		shortlist.append(listing)
 
 	return shortlist
 
 html = "University of Waterloo - MyAccount - Hire Waterloo Co-op - Jobs _ Applications.html"
+
+content = getContent(html)
 file = open("shortlist.txt", "w")
 
-for jobID in getShortlist(getContent(html)):
-	file.write(jobID + "\n")
+for listing in getShortlist(content):
+	file.write(listing + "\n")
