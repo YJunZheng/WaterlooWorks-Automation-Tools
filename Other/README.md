@@ -1,3 +1,14 @@
+# Auto apply with default package in shortlist
+
+Note: The script will not apply to any shortlisted job that does not contain the default package radio box nor will it apply to any job that you have already applied to.
+
+How to use:
+1. Make sure you are logged into Waterloo Works
+2. Make sure to change the environment variable: ``username`` to your machine's username
+3. Make sure you close all chrome tabs
+4. Run the script
+5. Enjoy :)
+
 # Tool to compare two lists
 
 How to use:
