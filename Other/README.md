@@ -2,12 +2,15 @@
 
 Note: The script will not apply to any shortlisted job that does not contain the default package radio box nor will it apply to any job that you have already applied to.
 
+Setup:
+```pip install selenium```
+
 How to use:
 1. Make sure you are logged into Waterloo Works
 2. Make sure that you have a default package created
 3. Make sure to change the environment variable: ``username`` to your machine's username
 4. Make sure you close all chrome tabs
-5. Run the script
+5. Run apply.py
 6. Enjoy :)
 
 # Tool to compare two lists
